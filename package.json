@@ -1,0 +1,15 @@
+{
+  "name": "sre-test",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "npx mocha tests"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.1",
+    "supertest": "^6.1.6"
+  }
+}
