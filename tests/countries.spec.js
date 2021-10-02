@@ -6,7 +6,7 @@ describe('Countries', function() {
 
     before(async function() {
         await countriesHelper.getCountries();
-    })
+    });
 
     it('response status code is 200', function() {
         expect(countriesHelper.response.statusCode).to.eq(200);

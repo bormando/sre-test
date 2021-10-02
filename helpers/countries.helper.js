@@ -6,7 +6,7 @@ class CountriesHelper {
     }
 
     async getCountries() {
-        await supertest('https://sre-test-api.herokuapp.com')
+        await supertest(process.env.BASE_URL)
             .get('/country_codes')
             .then(res => {
                 this.response = res;

@@ -12,7 +12,7 @@ describe('Cases', function() {
         await countriesHelper.getCountries();
         country = await getRandomValue(countriesHelper.response.body);
         await casesHelper.getCases(country);
-    })
+    });
 
     it('response status code is 200', function() {
         expect(casesHelper.response.statusCode).to.eq(200);

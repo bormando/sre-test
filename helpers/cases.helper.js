@@ -6,7 +6,7 @@ class CasesHelper {
     }
 
     async getCases(country) {
-        await supertest('https://sre-test-api.herokuapp.com')
+        await supertest(process.env.BASE_URL)
             .get(`/country/${country}`)
             .then(res => {
                 this.response = res;
